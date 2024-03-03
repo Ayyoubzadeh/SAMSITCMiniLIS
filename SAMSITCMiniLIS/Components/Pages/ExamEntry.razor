@@ -1,0 +1,181 @@
+﻿@page "/examentry"
+@using SAMSITCMiniLIS.Shared
+
+<h3>Blazor App</h3>
+
+<div class="form-group">
+    <label>Patient:</label>
+    <input type="text" class="form-control" @bind="patient" />
+</div>
+
+<div class="form-group">
+    <label>Registration No:</label>
+    <input type="text" class="form-control" @bind="registrationNo" />
+</div>
+
+<div class="form-group">
+    <label>Age:</label>
+    <input type="text" class="form-control" @bind="age" />
+</div>
+
+<div class="form-group">
+    <label>Granulocytes:</label>
+    <input type="text" class="form-control" @bind="granulocytes" />
+</div>
+
+<div class="form-group">
+    <label>Monocytes:</label>
+    <input type="text" class="form-control" @bind="monocytes" />
+</div>
+
+<div class="form-group">
+    <label>Lymphocytes:</label>
+    <input type="text" class="form-control" @bind="lymphocytes" />
+</div>
+
+<div class="form-group">
+    <label>CD19 Expression:</label>
+    <input type="text" class="form-control" @bind="CD19Expression" />
+</div>
+
+<div class="form-group">
+    <label>CD19 Gated:</label>
+    <input type="text" class="form-control" @bind="CD19Gated" />
+</div>
+
+<div class="form-group">
+    <label>CD19 Total:</label>
+    <input type="text" class="form-control" @bind="CD19Total" />
+</div>
+
+<div class="form-group">
+    <label>CD20 Expression:</label>
+    <input type="text" class="form-control" @bind="CD20Expression" />
+</div>
+
+<div class="form-group">
+    <label>CD20 Gated:</label>
+    <input type="text" class="form-control" @bind="CD20Gated" />
+</div>
+
+<div class="form-group">
+    <label>CD20 Total:</label>
+    <input type="text" class="form-control" @bind="CD20Total" />
+</div>
+
+<div class="form-group">
+    <label>CD4 Expression:</label>
+    <input type="text" class="form-control" @bind="CD4Expression" />
+</div>
+
+<div class="form-group">
+    <label>CD4 Gated:</label>
+    <input type="text" class="form-control" @bind="CD4Gated" />
+</div>
+
+<div class="form-group">
+    <label>CD4 Total:</label>
+    <input type="text" class="form-control" @bind="CD4Total" />
+</div>
+
+<div class="form-group">
+    <label>CD5 Expression:</label>
+    <input type="text" class="form-control" @bind="CD5Expression" />
+</div>
+
+<div class="form-group">
+    <label>CD5 Gated:</label>
+    <input type="text" class="form-control" @bind="CD5Gated" />
+</div>
+
+<div class="form-group">
+    <label>CD5 Total:</label>
+    <input type="text" class="form-control" @bind="CD5Total" />
+</div>
+
+<div class="form-group">
+    <label>Referral Center:</label>
+    <input type="text" class="form-control" @bind="referralCenter" />
+</div>
+
+<div class="form-group">
+    <label>Specimen Type:</label>
+    <input type="text" class="form-control" @bind="specimenType" />
+</div>
+
+<div class="form-group">
+    <label>Report Date:</label>
+    <input type="text" class="form-control" @bind="reportDate" />
+</div>
+
+<div class="form-group">
+    <label>Gender:</label>
+    <select class="form-control" @bind="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <button class="btn btn-primary" @onclick="GenerateReport">Generate</button>
+    <button class="btn btn-secondary" @onclick="ClearForm">Clear</button>
+</div>
+
+@code {
+
+    private string patient;
+    private string registrationNo;
+    private string age;
+    private string granulocytes;
+    private string monocytes;
+    private string lymphocytes;
+    private string CD19Expression;
+    private string CD19Gated;
+    private string CD19Total;
+    private string CD20Expression;
+    private string CD20Gated;
+    private string CD20Total;
+    private string CD4Expression;
+    private string CD4Gated;
+    private string CD4Total;
+    private string CD5Expression;
+    private string CD5Gated;
+    private string CD5Total;
+    private string referralCenter;
+    private string specimenType;
+    private string reportDate;
+    private string gender;
+
+    private void GenerateReport()
+    {
+
+       // DocGenerator.generate(patient)
+    
+    }
+
+    private void ClearForm()
+    {
+        patient = string.Empty;
+        registrationNo = string.Empty;
+        age = string.Empty;
+        granulocytes = string.Empty;
+        monocytes = string.Empty;
+        lymphocytes = string.Empty;
+        CD19Expression = string.Empty;
+        CD19Gated = string.Empty;
+        CD19Total = string.Empty;
+        CD20Expression = string.Empty;
+        CD20Gated = string.Empty;
+        CD20Total = string.Empty;
+        CD4Expression = string.Empty;
+        CD4Gated = string.Empty;
+        CD4Total = string.Empty;
+        CD5Expression = string.Empty;
+        CD5Gated = string.Empty;
+        CD5Total = string.Empty;
+        referralCenter = string.Empty;
+        specimenType = string.Empty;
+        reportDate = string.Empty;
+        gender = string.Empty;
+    }
+}

@@ -1,0 +1,11 @@
+[Report]
+Title = PNH
+Header = --Header1--
+Dif_Table_Title = Flow Cytometry Immunophenotyping Report
+Dif_Table_Fields = Granulocytes:[0-100] , Monocytes:[0-100], RBC:[0-100]
+Dif_Table_Constrains = Granulocytes + Monocytes + RBC= 100
+Interpretation_Fields=Immunophenotyping,Morphologic Evaluation,Conclusion/Interpretation
+Footer_Fields=Checked by->Left,Released by->Right
+[Header]
+Name=Header1
+Content=Patient:Text,Registration No:Number, Gender:{Male,Female}, Age:[0,200]

@@ -1,0 +1,8 @@
+[Report]
+Title = CSF
+Header = --Header1--
+Markers_Table_Title = Gate: MN(%)
+Markers_Table_Fields = Group:T/NK-Cell Markers{CD3,CD2,CD7},Myelo/Mono Markers{CD14},Precursor Markers{CD34,CD117}
+Markers_Table_Columns={Markers,expression,Gated%,Total%}
+Interpretation_Fields=Immunophenotyping,Morphologic Evaluation,Conclusion/Interpretation
+Footer_Fields=Checked by->Left,Released by->Right

@@ -1,0 +1,8 @@
+[19-20] 
+Title=19-20
+Header=--Header1--  
+Markers_Table_Title=Data of Flow Cytometry 
+Markers_Table_Fields=Marker{CD19}
+Markers_Table_Columns={Markers,intensity,Gated%,Total%}
+Interpretation_Fields=Immunophenotyping,Morphologic Evaluation,Conclusion/Interpretation
+Footer_Fields=Checked by->Left,Released by->Right

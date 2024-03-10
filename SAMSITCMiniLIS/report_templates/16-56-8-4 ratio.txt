@@ -1,0 +1,9 @@
+[16-56-8-4_ratio] 
+Title=16-56-8-4 ratio
+Header=--Header1—
+Dif_Table_Title=Differential count by Flow Cytometry (%) as CD45 gating 
+Markers_Table_Title=Data are shown in Total cells
+Markers_Table_Fields=Group:T/NK-Cell Markers{CD8,CD4,CD3,CD4/8 ratio,CD56},Myelo/Mono Markers{CD16,CD16/56},B-Cell Markers{CD19}
+Markers_Table_Columns={Markers,intensity,Gated%,Total%} 
+Interpretation_Fields=Immunophenotyping,Morphologic Evaluation,Conclusion/Interpretation 
+Footer_Fields=Checked by->Left,Released by->Right

@@ -1,0 +1,43 @@
+﻿<label>@Title:</label>
+@if(Type=="Text"){
+    <input type="@Type" class="@CssClass" value="@FieldValue" @oninput="HandleInput" />
+}
+else if (Type == "Combo")
+{
+    <div class="form-group"> 
+        <select class="form-control" @bind="@FieldValue">
+            @foreach(var op in Options)
+            {
+                <option value="@op">@op</option>
+            }
+        </select>
+    </div>
+}
+
+
+
+@code {
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public string Type { get; set; }
+
+    [Parameter]
+    public string[] Options { get; set; }
+
+    [Parameter]
+    public string CssClass { get; set; }
+
+    [Parameter]
+    public string FieldValue { get; set; }
+
+    [Parameter]
+    public EventCallback<string> FieldValueChanged { get; set; }
+
+    private async Task HandleInput(ChangeEventArgs e)
+    {
+        FieldValue = e.Value.ToString();
+        await FieldValueChanged.InvokeAsync(FieldValue);
+    }
+}

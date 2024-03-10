@@ -1,0 +1,11 @@
+[Report]
+Title=Granulocyte hyperplasia related to PNH
+Header=--Header1--
+Dif_Table_Title=Differential count by Flow Cytometry (%) as CD45 gating
+Dif_Table_Fields=Granulocytes:[0-100],Monocytes:[0-100],Lymphocytes:[0-100],Myeloblasts:[0-100],Erythroid cells:[0-100]
+Dif_Table_Constrains=Granulocytes+Monocytes+Lymphocytes+Erythroid cells=100
+Markers_Table_Title=Data are shown in Total cells
+Markers_Table_Fields=Group:T/NK-Cell Markers{CD8,CD4,CD3,CD7,CD2,CD56},Myelo/Mono Markers{CD33,CD14,CD11b,CD64},Precursor Markers{CD34,CD117,CD10},B-Cell Markers{CD19,CD20,CD22,CD200,CD23,CD38/138},Other Markers{CD45,HLA-DR,CD71}
+Markers_Table_Columns={Markers,Intensity,Gated%,Total%}
+Interpretation_Fields=Immunophenotyping,Morphologic Evaluation,Conclusion/Interpretation
+Footer_Fields=Checked by->Left,Released by->Right

@@ -1,0 +1,3 @@
+[Header1]
+Name=Header1
+Content=Patient:Text,Registration No:Number, Gender:{Male,Female}, Age:[0,200],Referral center:{Bahrami Children's Hospital,Children's Medical Center (Hospital),Farabi Hospital,Imam Khomeini Hospital,Razi hospital,Roozbeh Hospital,Shariati Hospital,Sina Hospital,Tehran Heart Center,Yas Women Hospital,Ziaeian Hospital,Dental Clini},Report date:date,CD:Text,Specimen type:Text
